@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <link rel="shortcut icon" href="css/favicon.ico">
+
+    <!-- Standard Favicon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="css/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="css/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="css/favicon-48x48.png">
+    <meta charset="UTF-8">
+    <title>Cours – Plateforme</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="layout">
+
+        <aside>
+            <a href="#" class="profile-bubble" id="profileBubble">
+                <span id="profileLetter">?</span>
+            </a>
+            <!-- le dropdown sera créé dynamiquement via JS juste après -->
+
+            <select id="classFilter"></select>
+            <select id="subjectFilter"></select>
+            <a href="admin.html">Admin</a>
+        </aside>
+
+        <main class="content">
+            <div id="loader" class="loader">
+                <div class="spinner"></div>
+                <span>Chargement...</span>
+            </div>
+            <section>
+                <h2 class="ForcedColor">Tous les cours</h2>
+                <div id="courseList"></div>
+            </section>
+            <section class="latest-section">
+                <h2>Derniers cours ajoutés</h2>
+                <div id="latestCourses" class="latest-grid"></div>
+            </section>
+
+
+
+        </main>
+
+
+
+    </div>
+    <footer class="site-footer">
+        <div class="footer-container">
+
+            <div class="footer-brand">
+                <h3>Entraide Lycée</h3>
+                <p>Plateforme d’entraide scolaire collaborative.</p>
+            </div>
+
+            <nav class="footer-links">
+                <a href="mentions-legales.html" class="footer-link">Mentions légales</a>
+            </nav>
+
+            <div class="footer-bottom">
+                <p>© 2025 Entraide Lycée – Tous droits réservés</p>
+            </div>
+
+        </div>
+    </footer>
+
+    <script type="module" src="js/user.js"></script>
+</body>
+
+</html>

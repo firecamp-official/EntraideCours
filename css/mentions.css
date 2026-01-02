@@ -1,0 +1,70 @@
+
+
+/* ===============================
+    PAGE MENTIONS LÉGALES
+================================ */
+
+/* Conteneur global */
+body {
+  max-width: 900px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+/* Titre principal */
+h1 {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* Sections */
+section {
+  background: var(--card-bg);
+  padding: 20px;
+  border-radius: var(--radius);
+  margin-bottom: 20px;
+  box-shadow: var(--shadow);
+}
+
+/* Titres de sections */
+section h2 {
+  margin-bottom: 8px;
+}
+
+/* Sous-sections (h3) */
+section h3 {
+  margin-top: 16px;
+  margin-bottom: 6px;
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+/* Paragraphes */
+section p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+/* Listes */
+section ul {
+  padding-left: 20px;
+  margin-bottom: 12px;
+}
+
+section li {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 6px;
+}
+
+/* Liens */
+section a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+section a:hover {
+  text-decoration: underline;
+}

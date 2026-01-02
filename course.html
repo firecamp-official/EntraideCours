@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cours – Plateforme</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="css/favicon.ico">
+
+    <!-- Standard Favicon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="css/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="css/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="css/favicon-48x48.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="layout">
+
+        <aside>
+            <select id="classFilter"></select>
+            <select id="subjectFilter"></select>
+            <a href="dashboard.html">Retour</a>
+        </aside>
+
+        <main id="course">
+            <div class="chronometer" id="chronometer">
+                <div class="chrono-left">
+                    <div class="chrono-display" id="chronoDisplay">00:00:00</div>
+                    <div class="subtext">Temps passé sur ce cours</div>
+                </div>
+                <div class="chrono-controls">
+                    <button id="chronoStart" class="start">▶</button>
+                    <button id="chronoPause" class="pause">⏸</button>
+                    <button id="chronoReset" class="reset">⏹</button>
+                </div>
+            </div>
+
+            <div id="loader" class="loader">
+                <div class="spinner"></div>
+                <span>Chargement...</span>
+            </div>
+
+            <div id="courseContent"></div>
+
+        </main>
+
+
+    </div>
+    <!-- Progression lecture -->
+    <div id="readingProgress">
+        <div class="bar"></div>
+        <span class="label">0%</span>
+    </div>
+    <button id="backToTop" class="back-to-top">↑</button>
+    <footer class="site-footer">
+        <div class="footer-container">
+
+            <div class="footer-brand">
+                <h3>Entraide Lycée</h3>
+                <p>Plateforme d’entraide scolaire collaborative.</p>
+            </div>
+
+            <nav class="footer-links">
+                <a href="mentions-legales.html" class="footer-link">Mentions légales</a>
+            </nav>
+
+            <div class="footer-bottom">
+                <p>© 2025 Entraide Lycée – Tous droits réservés</p>
+            </div>
+
+        </div>
+    </footer>
+
+
+    <script type="module" src="js/course.js"></script>
+
+</body>
+
+</html>

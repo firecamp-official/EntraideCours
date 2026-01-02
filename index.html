@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Entraide Lycée - Connexion</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="css/favicon.ico">
+
+  <!-- Standard Favicon -->
+  <link rel="icon" type="image/png" sizes="16x16" href="css/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="css/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="css/favicon-48x48.png">
+  <link rel="stylesheet" href="css/auth.css">
+  <style>
+    .user-count{
+      margin-top:10px;
+      font-size:0.95rem;
+      color:#9be7ff;
+      background: rgba(124,58,237,0.06);
+      padding:6px 10px;
+      border-radius:999px;
+      display:inline-block;
+      font-weight:600;
+    }
+  </style>
+</head>
+
+<body class="center">
+
+  <div class="auth-layout">
+
+    <!-- CONNEXION -->
+    <!-- CONNEXION / INSCRIPTION -->
+    <div class="auth-card">
+      <h1>Entraide Lycée</h1>
+
+      <div id="userCount" class="user-count">Chargement des membres…</div>
+
+      <input id="email" placeholder="Email">
+      <input id="password" type="password" placeholder="Mot de passe">
+      <input id="username" placeholder="Pseudo (inscription)">
+
+      <!-- Checkbox acceptation -->
+      <div class="checkbox-group">
+        <input type="checkbox" id="terms">
+        <label for="terms" class="accept-section">
+          J’ai lu et j’accepte les <a href="conditions-utilisations.html" target="_blank">Conditions d’Utilisation</a> et les
+          <a href="mentions-legales.html" target="_blank">Mentions Légales</a>
+        </label>
+      </div>
+
+
+      <button id="loginBtn">Connexion</button>
+      <button id="registerBtn">Inscription</button>
+    </div>
+
+
+
+    <!-- TEXTE DROITE -->
+    <div class="auth-info">
+      <h2>La plateforme d’entraide entre lycéens</h2>
+
+      <p>
+        <strong>Partage tes cours</strong>, aide les autres et progresse
+        dans un espace pensé pour les élèves.
+      </p>
+
+      <ul>
+        <li>Cours classés par niveau</li>
+        <li>Entraide entre lycéens</li>
+        <li>Comptes sécurisés</li>
+        <li>Simple, rapide, moderne</li>
+      </ul>
+
+      <p class="auth-highlight">
+        Pensé par un lycéen, pour les lycéens.
+      </p>
+    </div>
+
+  </div>
+
+  <script type="module" src="./js/auth.js"></script>
+</body>
+
+</html>

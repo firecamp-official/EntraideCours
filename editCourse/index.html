@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fiche de cours – Titre du Chapitre</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Fonts -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Fira+Code&family=Comic+Neue&display=swap">
+</head>
+
+<body>
+    <header>
+        <h1 id="fiche-title" contenteditable="true">Fiche de cours</h1>
+        <p class="subtitle">Chapitre : <span id="chapter-title" contenteditable="true">Titre du Chapitre</span></p>
+        <button class="toolbar-toggle">⚙️ Outils</button>
+
+        <div class="toolbar">
+            <button id="toggle-theme">🌙 Mode Nuit</button>
+            <button id="export-pdf">📄 Exporter en PDF</button>
+            <button id="add-section">➕ Ajouter section</button>
+            <button id="reset-fiche">🗑 Réinitialiser</button>
+            <select id="font-select">
+                <option value="Poppins">Poppins</option>
+                <option value="Fira Code">Fira Code</option>
+                <option value="Comic Neue">Comic Neue</option>
+            </select>
+
+            <input type="color" id="text-color" title="Couleur du texte">
+
+            <select id="text-margin">
+                <option value="0.5rem">Petite marge</option>
+                <option value="1rem" selected>Moyenne marge</option>
+                <option value="2rem">Grande marge</option>
+            </select>
+            <select id="palette-select">
+                <option value="light">Clair</option>
+                <option value="dark">Sombre</option>
+                <option value="pastel">Pastel</option>
+                <option value="solar">Solaire</option>
+            </select>
+            
+            <button id="renseignment"><a href="https://www.ilovepdf.com/fr/pdf_en_jpg" target="_blank">Convertisseur PDF/PNG</a></button>
+            <button id="retour"><a href="../admin.html"><strong>Retour à l'édition</strong></a></button>
+        </div>
+    </header>
+
+    <main id="fiche-content">
+        <section id="intro" class="card" contenteditable="true">
+            <h2>1. Introduction</h2>
+            <p>Résumé ou explication d’introduction du chapitre.</p>
+        </section>
+
+        <section id="points" class="card" contenteditable="true">
+            <h2>2. Points essentiels</h2>
+            <ul>
+                <li>Premier point clé</li>
+                <li>Deuxième point clé</li>
+                <li>Troisième point clé</li>
+            </ul>
+        </section>
+
+        <section id="code" class="card" contenteditable="true">
+            <h2>3. Exemple de code</h2>
+            <pre><code class="code-block">
+def exemple():
+    print("Hello world !")
+      </code></pre>
+        </section>
+
+        <section id="retient" class="card highlight" contenteditable="true">
+            <h2>🧠 À retenir</h2>
+            <p>Résumé rapide ou concept clé à ne pas oublier.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Créé avec 💻 et ☕ – LAMBERT JOHAN 2025 ©</p>
+    </footer>
+
+    <!-- Librairies PDF -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

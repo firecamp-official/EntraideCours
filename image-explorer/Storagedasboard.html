@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Explorateur d’images</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body style="display:none">
+
+  <main class="glass-card">
+    <header class="header">
+      <h1>Explorateur d’images</h1>
+      <p>Ajoute, prévisualise et réutilise tes images facilement</p>
+      <a href="../admin.html" class="editeur">retour à l'édition des cours</a>
+    </header>
+
+    <button id="openExplorer" class="btn primary">
+      + Ajouter / choisir une image
+    </button>
+
+    <section id="result" class="result" hidden>
+      <img id="preview" alt="Prévisualisation">
+      <div class="url-box">
+        <input id="imageUrl" readonly>
+        <button id="copyUrl" class="btn ghost">copier le lien</button>
+      </div>
+    </section>
+
+    <h2>Images déjà uploadées</h2>
+    <div id="imageContainer" class="image-grid"></div>
+  </main>
+
+  <!-- Cloudinary -->
+  <script src="https://widget.cloudinary.com/v2.0/global/all.js"></script>
+
+  <!-- Guard -->
+  <script type="module">
+    import { uxGuard } from "./js/uxGuard.js";
+    uxGuard();
+  </script>
+
+  <!-- Logic -->
+  <script type="module" src="js/explorer.js"></script>
+</body>
+</html>
